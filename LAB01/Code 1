@@ -1,0 +1,10 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Name: Natthapong Buahom" << endl;
+    cout << "Course: MIIA106" << endl;
+    cout << "Email: 6811130041@mut.ac.th" << endl;
+    cout << "Example of using std::cout for multiple lines." << endl;
+    return 0;
+}
