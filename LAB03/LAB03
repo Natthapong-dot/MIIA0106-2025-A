@@ -1,2 +1,39 @@
-@ LAB03 - C++ program 
-This folder contains the solution gor the second lab assigment.
+// ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string studentId;
+    string fullName;
+    float totalScore;
+    char grade;
+
+    // 1. รหัสนักศึกษา
+    cout << "StudentID: ";
+    getline(cin, studentId);
+
+    // 2. ชื่อ-นามสกุล
+    cout << "FullName: ";
+    getline(cin, fullName);
+
+    // 3. คะแนนรวม
+    cout << "Score: ";
+    cin >> totalScore;
+
+    // 4. เกรดที่ได้รับตามเกณฑ์
+    if (totalScore >= 90) grade = 'A';
+    else if (totalScore >= 80) grade = 'B';
+    else if (totalScore >= 70) grade = 'C';
+    else if (totalScore >= 60) grade = 'D';
+    else grade = 'F';
+
+    cout << "\nStudentID: " << studentId << endl;
+    cout << "FullName: " << fullName << endl;
+    cout << "Score: " << totalScore << endl;
+    cout << "Grade: " << grade << endl;
+
+    return 0;
+}
