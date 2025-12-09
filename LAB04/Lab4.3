@@ -1,1 +1,23 @@
+// LAB4.3.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(void) {
+    int n = 100;
+    int i = 1;
+    int sum = 0;
+
+    /* ใช้ do-while เพื่อบวกเลขตั้งแต่ 1 ถึง n */
+    do {
+        sum += i;
+        i++;
+    } while (i <= n);
+
+    printf("Sum 1..%d (do-while) = %d\n", n, sum);
+    return 0;
+}
 
