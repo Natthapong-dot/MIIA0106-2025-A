@@ -1,0 +1,15 @@
+// TODO: เปลี่ยนค่า a ผ่าน pointer
+#include <iostream>
+using namespace std;
+int main() {
+    int a = 5;
+    int* p = &a;
+    for (int i = 0; i < 5; i++) {
+        *p += 2; 
+    }
+
+    *p = 100; // เปลี่ยนค่า a ผ่าน pointer ด้วยการ dereference ตามที่กำหนด
+
+    cout << "a = " << a << endl;
+    return 0;
+}
