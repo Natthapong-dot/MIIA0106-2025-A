@@ -1,0 +1,56 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Phone {
+    string mobile;
+    string home;
+};
+
+struct Parent {
+    string name;
+    string relationship;
+    Phone contact;
+};
+
+struct Student {
+    string id;
+    string nickname;
+    string lineId;
+    Phone myContact;
+    Parent myParent;
+};
+
+int main()
+{
+    Student s;
+    s.id = "6811130041";
+    s.nickname = "Sa";
+    s.lineId = "sxnxtthxpxng";
+    s.myContact.mobile = "0637587762";
+    s.myContact.home = "0805929080";
+    s.myParent.name = "Chamrong";
+    s.myParent.relationship = "Father";
+    s.myParent.contact.mobile = "0805929080";
+    s.myParent.contact.home = "0805929080";
+
+    cout << "=== Student Data ===\n";
+    cout << "ID: " << s.id << '\n';
+    cout << "Nickname: " << s.nickname << '\n';
+    cout << "Line ID: " << s.lineId << "\n\n";
+
+    cout << "=== Student's Contact Info ===\n";
+    cout << "Mobile: " << s.myContact.mobile << '\n';
+    cout << "Home: " << s.myContact.home << "\n\n";
+
+    cout << "=== Parent Data ===\n";
+    cout << "Name: " << s.myParent.name << '\n';
+    cout << "Relationship: " << s.myParent.relationship << "\n\n";
+
+    cout << "=== Parent's Contact Info ===\n";
+    cout << "Mobile: " << s.myParent.contact.mobile << '\n';
+    cout << "Home: " << s.myParent.contact.home << "\n";
+
+    return 0;
+}
+
